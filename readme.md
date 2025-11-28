@@ -39,15 +39,15 @@ cd mythical-creature-sanctuary
 2. **Get a Supabase project & anon key**
 - Go to [Supabase](https://supabase.com/) and create a free project
 - Set up a table called creatures with these columns:
-| Column    | Type | Notes |
-| -------- | ------- | ------- |
-| id  | int8    | Primary key, auto increment |
-| name | text     | Required |
-| species    | text    | Required |
-| danger_level    | int4    | Optional |
-| status    | text    | Optional, Default: "Contained" |
-| elemental_type    | text    | Optional |
-| created_at    | timestamp    | Default: now() |
+| Column         | Type       | Notes                        |
+| -------------- | ---------- | ---------------------------- |
+| id             | int8       | Primary key, auto increment  |
+| name           | text       | Required                     |
+| species        | text       | Required                     |
+| danger_level   | int4       | Optional                     |
+| status         | text       | Optional, Default: "Contained" |
+| elemental_type | text       | Optional                     |
+| created_at     | timestamp  | Default: now()               |
 - Copy your Project URL and Anon Key from Project Settings -> API
 
 3. **Update your key in `app.js`**
